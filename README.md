@@ -2,20 +2,25 @@
 # install
 ---------
 ##### init with flannel
-```python
+```bash
         kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
 
 ##### gain kubectl power
-```python
+```bash
         cp /etc/kubernetes/admin.conf || kubelet.conf $HOME/
         chown $(id -u):$(id -g) $HOME/admin.conf || kubelet.conf
         export KUBECONFIG=$HOME/admin.conf || kubelet.conf
 ```
 
 ##### reset iptable
-```python
+```bash
         iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
+```
+
+##### dashboard
+```
+       https://medium.com/@sondnpt00343/deploying-a-publicly-accessible-kubernetes-dashboard-v2-0-0-betax-8e39680d4067
 ```
 
 kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
