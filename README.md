@@ -1,13 +1,20 @@
 # k8sNotes
-### k8s install
+# install
+---------
+##### init with flannel
 ```python
-        # init with flannel
         kubeadm init --pod-network-cidr=10.244.0.0/16
-        # gain kubectl power
+```
+
+##### gain kubectl power
+```python
         cp /etc/kubernetes/admin.conf || kubelet.conf $HOME/
         chown $(id -u):$(id -g) $HOME/admin.conf || kubelet.conf
         export KUBECONFIG=$HOME/admin.conf || kubelet.conf
-        # reset iptable
+```
+
+##### reset iptable
+```python
         iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
 ```
 
