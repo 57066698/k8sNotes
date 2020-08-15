@@ -4,7 +4,7 @@
         # init with flannel
         kubeadm init --pod-network-cidr=10.244.0.0/16
         # gain kubectl power
-        cp /etc/kubernets/admin.conf || kubelet.conf $HOME/
+        cp /etc/kubernetes/admin.conf || kubelet.conf $HOME/
         chown $(id -u):$(id -g) $HOME/admin.conf || kubelet.conf
         export KUBECONFIG=$HOME/admin.conf || kubelet.conf
         # reset iptable
