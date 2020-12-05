@@ -35,9 +35,11 @@ kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
                - xx.xx.xx.xx
 ```
    open ssl
+```
    edit deployment
        spec:
          containers:
          - args:
             - /nginx-ingress-controller
             <b>- --enable-ssl-passthrough<b>
+ ```
