@@ -25,3 +25,9 @@
 
 kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
     --discovery-token-ca-cert-hash sha256:c58fe1a941c05dee5bb7344c696e6baee82b8d320c33bcd5b89a86143a2b258a 
+
+
+##### nginx-ingress
+   external-ip pandding: set svc 
+             externalIPs:
+               - xx.xx.xx.xx
