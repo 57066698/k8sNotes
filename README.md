@@ -41,5 +41,5 @@ kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
          containers:
          - args:
             - /nginx-ingress-controller
-            - --enable-ssl-passthrough
+            - --enable-ssl-passthrough  # this line
  ```
