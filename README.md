@@ -43,3 +43,14 @@ kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
             - /nginx-ingress-controller
             - --enable-ssl-passthrough  # this line
  ```
+ ##### dashboard as subpath /dashboard
+ ```
+ ingress
+      annotations:
+        nginx.ingress.kubernetes.io/ingress.class: "nginx"
+        nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+        nginx.ingress.kubernetes.io/rewrite-target: /$2
+      paths:
+        - path: /dashboard(/|$)(.*)
+        
+ ```
