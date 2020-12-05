@@ -28,6 +28,9 @@ kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
 
 
 ##### nginx-ingress
-   external-ip pandding: set svc 
+   external-ip pandding:
+```
+   edit svc
              externalIPs:
                - xx.xx.xx.xx
+```
