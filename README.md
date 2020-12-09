@@ -64,5 +64,5 @@ kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
 ##### longhorn
 ```
 # longhorn in subpath use image:
-   wangsiye/longhorn-ui:904c756
+   wangsiye/longhorn-ui:d99673b
 ```
