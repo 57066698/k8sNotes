@@ -55,9 +55,9 @@ kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
       paths:
         - path: /dashboard(/|$)(.*)
 ```
-# token expiretime : deployment
-ingress
-        - --token-ttl=0
+
 ```
-       
+#  token expiretime : deployment
+       args:
+        - --token-ttl=0
 ```
