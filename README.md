@@ -21,10 +21,10 @@
 ##### dashboard
 ```
        https://medium.com/@sondnpt00343/deploying-a-publicly-accessible-kubernetes-dashboard-v2-0-0-betax-8e39680d4067
+       
+       kubectl -n kube0system edit deployments kubernetes-dashboard
+       --token-ttl=0
 ```
-
-kubeadm join 192.168.1.11:6443 --token 3yy5l2.lxfmc3vi7l1888a4 \
-    --discovery-token-ca-cert-hash sha256:c58fe1a941c05dee5bb7344c696e6baee82b8d320c33bcd5b89a86143a2b258a 
 
 
 ##### nginx-ingress
