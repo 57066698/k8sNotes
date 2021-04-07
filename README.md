@@ -66,3 +66,8 @@
 # longhorn in subpath use image:
    wangsiye/longhorn-ui:d99673b
 ```
+##### change default storage class
+```
+kubectl get storageclass
+kubectl patch storageclass standard -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+```
